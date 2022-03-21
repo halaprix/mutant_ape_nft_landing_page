@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: #000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.mobile_nav_gradient {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 80%, transparent 20%);
+    --tw-backdrop-blur: blur(12px);
+    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
+        var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate)
+        var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
+        var(--tw-backdrop-sepia);
+}
+.mobile_nav_transparent {
+    background: linear-gradient(transparent, transparent) !important;
+}
+
+@layer components {
+    .container {
+        @apply mx-auto max-w-full px-5 md:px-[65px] xl:max-w-[1280px];
+    }
+}
+
+._link {
+    @apply text-secondary underline;
+}
+.section_title {
+    @apply text-white text-3xl md:text-5xl font-bold md:text-center md:w-[60%] mx-auto mb-10 md:mb-16;
+}
