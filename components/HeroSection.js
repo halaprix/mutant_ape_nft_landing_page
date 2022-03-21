@@ -7,7 +7,7 @@ function HeroSection() {
             <div className="container h-full grid grid-cols-1 gap-y-5 md:gap-y-0 md:grid-cols-[25%,auto,25%] gap-x-10 xl:gap-x-0 text-white place-items-center">
                 <div className="-rotate-3 order-2 md:order-[unset]">
                     <div className="w-[75%] mx-auto md:w-full">
-                        <Image src={image1} alt="Nft" width="512" height="512" />
+                        <Image src={image1} alt="Nft" width="512" height="512" priority placeholder="blur"/>
                     </div>
                 </div>
                 <div className="text-center flex flex-col items-center justify-center order-1 md:order-[unset] mb-8 md:mb-0">
@@ -19,7 +19,7 @@ function HeroSection() {
 
                 <div className="rotate-3 order-3 md:order-[unset] mt-8 md:mt-0">
                     <div className="w-[75%] mx-auto md:w-full">
-                        <Image src={image2} alt="Nft" width="512" height="512" />
+                        <Image src={image2} alt="Nft" width="512" height="512" priority placeholder="blur"/>
                     </div>
                 </div>
             </div>
