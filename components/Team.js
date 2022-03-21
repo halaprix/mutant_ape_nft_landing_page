@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ReactNode } from "react";
+import image1 from "../public/img/nft_1.png";
 
 function Team({ name, rank, username, socials, imgSrc }) {
   return (
@@ -8,7 +9,7 @@ function Team({ name, rank, username, socials, imgSrc }) {
         <div className="w-[150px] h-[150px] relative aspect-square bg-primary-700 mt-3.5">
           <Image
             layout="fill"
-            src="/img/nft_1.png"
+            src={image1}
             alt={name}
             width="512"
             height="512"
