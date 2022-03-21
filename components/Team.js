@@ -8,7 +8,7 @@ function Team({ name, rank, username, socials, imgSrc }) {
       <div className="flex flex-col items-center">
         <div className="w-[150px] h-[150px] relative aspect-square bg-primary-700 mt-3.5">
           <Image
-            layout="fill"
+           
             src={image1}
             alt={name}
             width="512"

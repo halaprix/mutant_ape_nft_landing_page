@@ -5,7 +5,11 @@
 @tailwind utilities;
 
 body {
-    background: #000;
+    background: rgb(102,55,24);
+background: -moz-linear-gradient(87deg, rgba(102,55,24,1) 0%, rgba(4,23,45,1) 100%);
+background: -webkit-linear-gradient(87deg, rgba(102,55,24,1) 0%, rgba(4,23,45,1) 100%);
+background: linear-gradient(87deg, rgba(102,55,24,1) 0%, rgba(4,23,45,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#663718",endColorstr="#04172d",GradientType=1);
 }
 
 html {
